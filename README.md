@@ -19,6 +19,10 @@ Inserts a coordinate into the octree, with some attached data (NOTE: `data` must
 
 Removes the coordinate with the given data from the octree.
 
+`Octree:Contains(data)`
+
+Returns true if `data` is in the Octree.
+
 `Octree:GetNearestNeighbor(coordinate: Vector3, <max_dist: number>)`
 
 Gets the nearest neighbor that is max_dist away from the coordinate. max_dist is math.huge by default.

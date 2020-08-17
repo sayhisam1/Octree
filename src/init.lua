@@ -191,6 +191,10 @@ function Octree:Remove(data)
     end
 end
 
+function Octree:Contains(data)
+    return self._dataToLeaf[data] ~= nil
+end
+
 function Octree:_RemoveChild(child)
     if not child then
         return
