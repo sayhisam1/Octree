@@ -172,7 +172,7 @@ end
 function Octree:GetNearestNeighbor(coordinate, max_dist)
     assert(typeof(coordinate) == "Vector3", "Coordinates must be Vector3!")
     max_dist = max_dist or math.huge
-    local best, dist = recursiveNN(self, coordinate, nil, max_dist)
+    local best, dist = recursiveNN(self, coordinate, nil, math.huge)
     if best and (coordinate - best._coordinate).Magnitude <= max_dist then
         return best._data, best._coordinate
     end
