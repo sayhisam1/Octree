@@ -23,6 +23,8 @@ Removes the coordinate with the given data from the octree.
 
 Gets the nearest neighbor that is max_dist away from the coordinate. max_dist is math.huge by default.
 
+Returns: `data`, `coordinate:Vector3`
+
 `Octree:GetSize()`
 
 Returns the number of data points inside the octree.
